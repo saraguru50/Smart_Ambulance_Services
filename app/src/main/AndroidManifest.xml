@@ -1,54 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sri.smartambulanceservices">
-
-    <!--
-         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
-         Google Maps Android API v2, but you must specify either coarse or fine
-         location permissions for the 'MyLocation' functionality. 
-    -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ambulance10"
-        android:label="Smart Ambulance Services"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.example.sri.smartambulanceservices">
 
         <!--
-             The API key for Google Maps-based APIs is defined as a string resource.
-             (See the file "res/values/google_maps_api.xml").
-             Note that the API key is linked to the encryption key used to sign the APK.
-             You need a different API key for each encryption key, including the release key that is used to
-             sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
-        -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+          Google Maps Android API v2, but you must specify either coarse or fine
+          location permissions for the 'MyLocation' functionality.
+     -->
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-        <activity
-            android:name=".MapsActivity"
-            android:label="Smart Ambulance Services">
-            <intent-filter>
+        <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ambulance10"
+            android:label="Smart Ambulance Services"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+
+            <!--
+              The API key for Google Maps-based APIs is defined as a string resource.
+              (See the file "res/values/google_maps_api.xml").
+              Note that the API key is linked to the encryption key used to sign the APK.
+              You need a different API key for each encryption key, including the release key that is used to
+              sign the APK for publishing.
+              You can define the keys for the debug and release targets in src/debug/ and src/release/.
+         -->
+            <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="@string/google_maps_key" />
+
+            <activity
+                android:name=".MapsActivity"
+                android:label="Smart Ambulance Services">
+                <intent-filter>
                 <action android:name="com.example.sri.smartambulanceservices.MAPSACTIVITY" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".servicePage"
-            android:label="Smart Ambulance Services">
-            <intent-filter>
+            </activity>
+            <activity
+                android:name=".MainActivity"
+                android:label="Smart Ambulance Services">
+                <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+            <activity
+                android:name=".registerPage"
+                android:label="Smart Ambulance Services">
+                <intent-filter>
+                <action android:name="com.example.sri.smartambulanceservices.REGISTERPAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+            <activity
+                android:name=".StartingPage"
+                android:label="Smart Ambulance Services">
+                <intent-filter>
+                <action android:name="com.example.sri.smartambulanceservices.STARTINGPAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+            <activity
+                android:name=".servicePage"
+                android:label="Smart Ambulance Services">
+                <intent-filter>
                 <action android:name="com.example.sri.smartambulanceservices.SERVICEPAGE" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity>
-    </application>
+            </activity>
+            <activity
+                android:name=".loginPage"
+                android:label="Smart Ambulance Services">
+                <intent-filter>
+                <action android:name="com.example.sri.smartambulanceservices.LOGINPAGE" />
 
-</manifest>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+            <activity
+                android:name=".serviceMap"
+                android:label="Smart Ambulance Services">
+                <intent-filter>
+                <action android:name="com.example.sri.smartambulanceservices.SERVICEMAP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+            <activity
+                android:name=".loginForm"
+                android:label="Smart Ambulance Services">
+                <intent-filter>
+                <action android:name="com.example.sri.smartambulanceservices.LOGINFORM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+        </application>
+
+    </manifest>
