@@ -41,64 +41,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:label="Smart Ambulance Services">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".registerPage"
-            android:label="Smart Ambulance Services">
-            <intent-filter>
-                <action android:name="com.example.sri.smartambulanceservices.REGISTERPAGE" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".StartingPage"
-            android:label="Smart Ambulance Services">
-            <intent-filter>
-                <action android:name="com.example.sri.smartambulanceservices.STARTINGPAGE" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".servicePage"
             android:label="Smart Ambulance Services">
             <intent-filter>
                 <action android:name="com.example.sri.smartambulanceservices.SERVICEPAGE" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".loginPage"
-            android:label="Smart Ambulance Services">
-            <intent-filter>
-                <action android:name="com.example.sri.smartambulanceservices.LOGINPAGE" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".serviceMap"
-            android:label="Smart Ambulance Services">
-            <intent-filter>
-                <action android:name="com.example.sri.smartambulanceservices.SERVICEMAP" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".loginForm"
-            android:label="Smart Ambulance Services">
-            <intent-filter>
-                <action android:name="com.example.sri.smartambulanceservices.LOGINFORM" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
